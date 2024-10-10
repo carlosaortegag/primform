@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios cc</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="formulario">
+    <form action="formu.php" method="post">
+        <table>
+            <tr>
+                
+                <td><input type="text" placeholder="tu nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                
+                <td><input type="password" placeholder="tu contraseña" name="password" required></td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="radio" name="genero" value="F" required> FEMENINO
+                    <input type="radio" name="genero" value="M" required> MASCULINO
+                </td>
+            </tr>
+            <tr>
+                
+                <td><input type="mail" placeholder="tu correo" name="email" required></td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <select class="seleccion" name="materia" required>
+                        <option selected hidden value="">MATERIAS</option>
+                        <option value="calculo">CALCULO</option>
+                        <option value="fisica">FISICA</option>
+                        <option value="programacion">PROGRAMACION</option>
+                        <option value="database">BASE DE DATOS</option>
+                        <option value="analisis">ANALISIS DE SISTEMAS</option>
+                        
+                    </select>
+                    <input type="phone" placeholder="tu numero cel." name="telefono" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    </div>
+</body>
+</html>
+ 
